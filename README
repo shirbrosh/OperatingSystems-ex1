@@ -1,0 +1,34 @@
+inbar.ziter, shir_brosh
+inbar ziter (205790504), shir brosh (316124767)
+EX: 1
+
+FILES:
+osm.cpp
+graph.png
+makefile
+
+REMARKS:
+
+ANSWERS:
+Assignment 1:
+    By running the program WhatIDo with the linux command strace, we understood that the program
+    opens a new folder under the name "Welcome" and within this folder opens another new folder
+    under the name "To", within this folder the programs creates a new file called "OS2020" and
+    then writes within the file the login of the user, and in a new line adds the sentence "If you
+    haven't read the course guidelines yet --- do it right now!" and in another new line it writes
+    the argument given to the program. At the end of the program the file is closed and then removed
+    and both folders are removed as well.
+
+Assignment 2:
+    In this section we measured the run time of different operations inside the VM, container and
+    the cs computers. The measures we received:
+        on the linux computer: addition - 0.43 [ns]
+                               empty function - 1.69 [ns]
+                               trap - 400.15 [ns]
+        inside the container: addition - 0.43 [ns]
+                       empty function - 1.64 [ns]
+                       trap - 400.92 [ns]
+        inside the VM: addition - 5.61 [ns]
+                              empty function - 27.27 [ns]
+                              trap - 676 [ns]
+    The graph we plotted measures the operation run-time in logarithmic scale.
